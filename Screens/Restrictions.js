@@ -36,7 +36,7 @@ export const allergensInfo = [
       
 ];
 
-const RestrictionsPage = ({ navigation }) => {
+const Restrictions = ({ navigation }) => {
     const [selectedRestrictions, setSelectedRestrictions] = useState([])
 
     function onMultiChange() {
@@ -62,9 +62,9 @@ const RestrictionsPage = ({ navigation }) => {
                     multiOptionContainerStyle={{ backgroundColor: "#568259" }}
                 />
             </View>
-            <View style={styles.buttonContainer}>
-                <Button title="Submit" color={"#568259"} onPress={navigation.navigate("RestrictionsPage")} />
-            </View>
+            {/* <View style={styles.buttonContainer}>
+                <Button title="Submit" color={"#568259"} onPress={navigation.navigate("Categories")} />
+            </View> */}
         </View>
     );
 };
@@ -107,4 +107,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default RestrictionsPage;
+export default Restrictions;

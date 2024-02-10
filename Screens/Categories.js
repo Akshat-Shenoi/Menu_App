@@ -12,6 +12,7 @@ const Categories = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.header}>View Your Menu</Text>
       <FlatList
         data={data}
         keyExtractor={(item) => item.id.toString()}
@@ -27,10 +28,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#F2EFE9',
     alignItems: 'center',
     marginTop: 60,
+    marginLeft: 10,
+    marginRight: 10
   },
   item: {
-    width: 180,
-    height: 180,
+    width: 140,
+    height: 140,
     margin: 10,
     backgroundColor: '#568259',
     borderRadius: 8,
@@ -41,6 +44,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#F2EFE9',
   },
+  header: {
+    color: '#568259',
+    fontSize: 35,
+    marginBottom: 20
+  }
 });
 
 export default Categories;

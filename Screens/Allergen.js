@@ -63,7 +63,7 @@ export const allergensInfo = [
     },
   ];
 
-const AllergensPage = ({ navigation }) => {
+const Allergen = ({ navigation }) => {
     const [selectedAllergens, setSelectedAllergens] = useState([])
 
     function onMultiChange() {
@@ -90,7 +90,7 @@ const AllergensPage = ({ navigation }) => {
                 />
             </View>
             <View style={styles.buttonContainer}>
-              <Button title="Next" color={"#568259"} onPress={() => {navigation.navigate('RestrictionsPage')}}/>
+              <Button title="Next" color={"#568259"} onPress={() => {navigation.navigate('Restrictions')}}/>
             </View>
         </View>
     );
@@ -134,4 +134,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default AllergensPage;
+export default Allergen;
